@@ -1,0 +1,121 @@
+.banner {
+    background: var(--cor-azul-degrade);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.banner_titulo {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.banner_texto {
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.banner_pesquisa {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.0625rem solid var(--cor-branco);
+    border-radius: 1.5rem;
+    background: var(--cor-azul-degrade);
+    color: var(--cor-branco);
+}
+
+.banner_pesquisa:hover {
+    background: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+
+.banner_pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    background-image: url(../img/Lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .banner {
+        padding: 3rem 2rem;
+    }
+
+    .banner_titulo {
+        font-size: 2.25rem;
+    }
+
+    .banner_pesquisa {
+        width: 75%;
+        padding: 1rem ;
+    }
+
+    .banner_pesquisa::placeholder {
+        font-size: 1rem;
+        background-position: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .banner {
+        padding: 3rem 2rem;
+    }
+
+    .banner_titulo {
+        font-size: 2.25rem;
+    }
+
+    .banner_pesquisa {
+        width: 50%;
+        padding: 1rem ;
+    }
+
+    .banner_pesquisa::placeholder {
+        font-size: 1rem;
+        background-position: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+
+    .banner {
+        padding: 5rem 0;
+    }
+
+    .banner_pesquisa {
+        width: 40%;
+        padding: 1rem ;
+    }
+
+    .banner_pesquisa::placeholder {
+        background-position: 6rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1728px){
+
+    .banner {
+        padding: 5rem 0;
+    }
+
+    .banner_pesquisa {
+        width: 35%;
+        padding: 1rem ;
+    }
+
+    .banner_pesquisa::placeholder {
+        background-position: 7rem;
+    }
+
+}

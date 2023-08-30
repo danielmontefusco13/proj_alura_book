@@ -1,0 +1,150 @@
+.carrossel_titulo {
+    background-color: var(--cor-branco);
+    text-align: center;
+    color: var(--cor-laranja);
+    font-size: 1.125;
+    font-weight: 700;
+    padding: 1.25rem 0 0.75rem 0;
+    text-transform: uppercase;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5rem 0 1rem 0;
+}
+
+.card-descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    background: var(--cor-branco);
+    box-shadow: 0pc 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.625rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.descricao_titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.descricao_titulo-livro {
+    color: var(--cor-azul);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.descricao-texto {
+    font-size: 0.875rem;
+}
+
+.botoes_item {
+    padding: 0.7rem;
+}
+
+.botoes_ancora {
+    background-color: var(--cor-laranja);
+    padding: 0.75rem 2.2rem;
+    font-weight: 700;
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+.descricao img {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel_titulo {
+        font-size: 1.625rem;
+        margin-top: 2rem;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2.5rem auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel_titulo {
+        font-size: 2rem;
+    }
+
+    .descricao_titulo {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .descricao-texto {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .descricao {
+        margin-right: 1.5rem;
+    }
+
+    .carrossel_container {
+        display: flex;
+        margin: 0 20vw 3rem 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .card-botoes {
+        padding-top: 1.5rem;
+    }
+}
